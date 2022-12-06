@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Web App con 2 botones</title>
+</head>
+<body>
+<h1>Web App con 2 botones</h1>
+<button onclick="incrementarVariable()">Mostrar valor de variable</button>
+<button onclick="mostrarMensaje()">Hola</button>
+
+<p id="valorVariable"></p>
+<p id="mensaje"></p>
+<script>
+let variable = 1;
+
+function incrementarVariable() {
+  if (variable === 4) {
+    variable = 1;
+  } else {
+    variable++;
+  }
+  document.getElementById("valorVariable").innerHTML = "Valor de la variable: " + variable;
+}
+
+function mostrarMensaje() {
+  document.getElementById("mensaje").innerHTML = "Hola";
+}
+</script>
+</body>
+</html>
